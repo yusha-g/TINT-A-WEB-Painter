@@ -1,0 +1,28 @@
+
+#toolbar{
+    position: absolute;
+    padding-left: .2em;
+    padding-right: .2em;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    background-color: rgba(0, 0, 0, 0.212);
+    -moz-box-shadow: 0 1px 3px #777;
+    -webkit-box-shadow: 0 1px 3px #777;
+}
+#appname{
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: 1em;
+    background: #5555ff;
+    background: -webkit-linear-gradient(to right, #4758ee, #84afff, #6c6cff);
+    background: linear-gradient(to right, #02b8ac, #00205c, #5151ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+td{
+
+    padding-left: .5em;
+    padding-right: .5em;
+}

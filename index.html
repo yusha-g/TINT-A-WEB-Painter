@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>TINT-A Web Painter</title>
+</head>
+<body>
+    <section class="body_container">
+        <!--toolbar-->
+    <section id="toolbar">
+        <table style="border-collapse: collapse;">
+        <tr >
+            <td id="appname" colspan="4">TINT</td>
+        </tr>
+        <tr >
+            <td>
+                <input type="radio" name="brush-type" value="pen" id="pen" checked>
+                <label for="pen">
+                    <i class="fa-solid fa-pen"></i>
+                </label>
+                <input type="radio" name="brush-type" value="eraser" id="erase">
+                <label for="eraser">
+                    <i class="fa-solid fa-eraser"></i>
+                </label>
+            </td>
+            <td>
+                <input type="color" style="width: 5em;" name="strokeStyle" id="strokeStyle">
+            </td>
+            <td>
+                <input type="radio" name="brush-cap" value="round" id="round" checked>
+                <label for="round">Round</label>
+                <input type="radio" name="brush-cap" value="square" id="square">
+                <label for="square">Square</label>
+            </td>
+            <td>
+                <input type="number" name="lineWidth" id="lineWidth" value="5" style="width:3em">
+            </td>
+            <!--td>
+                <input type="color" style="width: 5em;" name="fillStyle" id="fillStyle">
+            </td-->
+            <td>
+                <input type="button" value="Clear" name="clr" id="clr">
+            </td>
+        </tr>
+        </table>
+    </section>
+        <!--canvas-->
+    <canvas class="tint_drawing_board"></canvas>
+    </section>
+    <script src="tint.js"></script>
+</body>
+</html>
